@@ -1,0 +1,73 @@
+body {
+    background-color: lightblue;
+}
+
+
+/* menu de navegacion inicio */
+
+#menu {
+    background-color: khaki;
+    width: 1100px;
+    height: 75px;
+    margin: auto;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#menu ul li a {
+    color: grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 20px 20px;
+}
+
+#menu ul li {
+    /* propiedad obligarotia para que el sub-menu respete desaparecer el sub-menu 
+    position: relative; */
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    bottom: -30px;
+}
+
+#menu ul li a:hover {
+    color: rgb(201, 201, 201);
+}
+
+#menu ul li a:hover {
+    border-bottom: solid 1px rgb(16, 135, 135);
+}
+
+
+/* menu desplegable inicio  */
+
+#menu ul ul {
+    /* propiedad obligatoria para desaparecer el sub-menu position: absolute; */
+    display: none;
+    position: absolute;
+}
+
+#menu ul li ul li {
+    width: 120px;
+}
+
+#menu ul li ul li {
+    top: 5px;
+}
+
+#menu ul li:hover>ul {
+    /* propiedad obligatoria para para sub-menu display: block; */
+    display: block;
+}
+
+.logo {
+    margin-right: 200px;
+    margin-top: 15px;
+}
